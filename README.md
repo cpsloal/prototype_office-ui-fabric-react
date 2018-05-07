@@ -189,3 +189,12 @@ Yes!!! now we are talking ...
 
 ![Yey-Hello-World-Office-Add-in.png](/doc/images/Yey-Hello-World-Office-Add-in.png)
 
+Great 8( found a better doc! [Here it is](https://docs.microsoft.com/en-us/office/dev/add-ins/quickstarts/excel-quickstart-react) ... and its better than the fragmented documentation from folks at a big company.
+
+
+<br>
+
+### Make the Excel Add-in do something 'interesting'
+Using the instructions [here](https://docs.microsoft.com/en-us/office/dev/add-ins/quickstarts/excel-quickstart-react) got the Excel Add-in to work, and the [code changes are here](https://github.com/cpsloal/prototype_office-ui-fabric-react/commit/fbe93c35ea76fad88e21be5282c1c979070ac6b3) and the result:
+
+![make-it-green.png](/doc/images/make-it-green.png)
