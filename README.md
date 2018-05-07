@@ -90,8 +90,31 @@ npm install office-ui-fabric-react --save
 Following the instrunctions [here](https://github.com/OfficeDev/office-ui-fabric-react/blob/master/ghdocs/OnBoarding/SampleApp.md
 ) we now have the following:
 
-[![Hello World](doc/images/helloworld.png)](https://forthebadge.com)
+![Hello World](doc/images/helloworld.png)
 
  __[[see code changes](https://github.com/cpsloal/prototype_office-ui-fabric-react/commit/e6db78b4ff39de2d58c7c869b775906f8d9ade13)]__
 
 
+<br>
+
+### Host this app already...
+We need to serve this page somehwere! Going to follow the docs/recommendations [here](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#deployment) and going to try [GitHub Pages](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#github-pages)
+
+
+```
+# Install tool needed to generate and publish to GitHub Pages
+yarn add --dev gh-pages
+
+# Update packages.json with deploy script command:
+# "deploy": "gh-pages -d build"
+
+# Now deploy the app to GitHub Pages
+yarn run deploy
+
+```
+
+Yeeeeepy! deployed to GitHub Pages (see the URL woooo!)
+
+![deployed-to-github-pages.png](doc/images/deployed-to-github-pages.png)
+
+__[[see code changes](https://github.com/cpsloal/prototype_office-ui-fabric-react/commit/f5a3f33478521ecc79c402099259e7a183b7c138)]__
