@@ -179,3 +179,13 @@ The generated code is checkin (minus the package.json because its definitely mes
 
 [Here are the changes](https://github.com/cpsloal/prototype_office-ui-fabric-react/commit/5fb1e203164a83fe42fbdbeb91c381fba896708b) added for the Office Add-in stuff in packages.json.  The Office Add-in Generator should have modified existing package.json correctly or said what needed to be changed!
 
+Move Office Add-in generated files to fit the React App structure.  [Here are the changes](https://github.com/cpsloal/prototype_office-ui-fabric-react/commit/d9f4a0f0a9dd0cb5cd7135728e9ce48b3abb5638)
+
+[Remove the resource.html](https://github.com/cpsloal/prototype_office-ui-fabric-react/commit/b9bcc8ef49b970d89d0ef74d1d2e43e9134ef26c) generated help file by Office Add-in generator that were a bit wrong when trying to side-load the add-in on Office for Mac.  Instead follow instructions [here](https://docs.microsoft.com/en-us/office/dev/add-ins/testing/sideload-an-office-add-in-on-ipad-and-mac#sideload-an-add-in-on-office-for-mac) to side-load an Office Add-in on Office for Mac.
+
+Now [update Office Add-in manifest file](https://github.com/cpsloal/prototype_office-ui-fabric-react/commit/ec70ab0b83e06fc5ad3f07677fddb42897d79d26) and deploy.
+
+Yes!!! now we are talking ...
+
+![Yey-Hello-World-Office-Add-in.png](/doc/images/Yey-Hello-World-Office-Add-in.png)
+
