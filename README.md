@@ -50,6 +50,7 @@ Well, thats it folks.  We are done!  We can all go home now.
 ### Chef's Choice (お任せ)
   1. [create-react-app](https://www.npmjs.com/package/create-react-app)
   1. [office-ui-fabric-react](https://github.com/OfficeDev/office-ui-fabric-react)
+  1. [generator-office](https://github.com/OfficeDev/generator-office)
 
 
 
@@ -118,3 +119,63 @@ Yeeeeepy! deployed to GitHub Pages (see the URL woooo!)
 ![deployed-to-github-pages.png](doc/images/deployed-to-github-pages.png)
 
 __[[see code changes](https://github.com/cpsloal/prototype_office-ui-fabric-react/commit/f5a3f33478521ecc79c402099259e7a183b7c138)]__
+
+
+<br>
+
+### Now ... Office Add-ins? Really?
+
+https://docs.microsoft.com/en-us/office/dev/add-ins/overview/office-add-ins
+
+https://docs.microsoft.com/en-us/office/dev/add-ins/quickstarts/excel-quickstart-jquery?tabs=visual-studio-code
+
+hmm... looks like Office has Yeoman generators to create a Office Add-ins!
+
+```
+# Install Yeoman and the Office Add-ins generator
+npm install -g yo generator-office
+
+# Now scaffold the project :-(
+yo office
+
+```
+
+Following is what I went through.  The choices made for Yeoman generator!
+
+```
+
+
+     _-----_     ╭──────────────────────────╮
+    |       |    │   Welcome to the Office  │
+    |--(o)--|    │   Add-in generator, by   │
+   `---------´   │ @OfficeDev! Let's create │
+    ( _´U`_ )    │    a project together!   │
+    /___A___\   /╰──────────────────────────╯
+     |  ~  |     
+   __'.___.'__   
+ ´   `  |° ´ Y ` 
+
+? Would you like to create a new subfolder for your project? No
+? What do you want to name your add-in? prototype_office-ui-fabric-react Office Add-in
+? Which Office client application would you like to support? Excel
+? Would you like to create a new add-in? No, I already have a web app and only need a manifest file for my add-in.
+
+For more information and resources on your next steps, we have created a resource.html file in your project.
+? Would you like to open it now while we finish creating your project? Yes
+----------------------------------------------------------------------------------
+
+      Creating manifest for prototype_office-ui-fabric-react Office Add-in add-in
+
+----------------------------------------------------------------------------------
+
+
+ conflict package.json
+? Overwrite package.json? overwrite this and all others
+```
+
+So turns out that running yeoman in an existing project is messy, removed whole bunch of stuff!  Most likely not going to work.  But lets try it aye!
+
+The generated code is checkin (minus the package.json because its definitely messedup) [Code changes are here.](https://github.com/cpsloal/prototype_office-ui-fabric-react/commit/50eda720007c720044e82d8b16fae2b914cc3e72)
+
+[Here are the changes](https://github.com/cpsloal/prototype_office-ui-fabric-react/commit/5fb1e203164a83fe42fbdbeb91c381fba896708b) added for the Office Add-in stuff in packages.json.  The Office Add-in Generator should have modified existing package.json correctly or said what needed to be changed!
+
