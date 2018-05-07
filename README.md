@@ -31,15 +31,12 @@ npm install
 # serve the app from localhost:3000
 npm start
 
-# build electron application for production
+# build application for production
 npm run build
 
 # run unit & end-to-end tests
 npm test
 
-
-# lint all JS/Vue component files in `src/`
-npm run lint
 
 ```
 
