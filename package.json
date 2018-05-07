@@ -1,10 +1,11 @@
 {
-  "name": "prototype_office-ui-fabric-react",
+  "name": "prototype-office-ui-fabric-react-office-add-in",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://cpsloal.github.io/prototype_office-ui-fabric-react",
   "dependencies": {
     "office-ui-fabric-react": "^5.96.1",
+    "office-addin-validator": "^1.0.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-scripts": "1.1.4"
@@ -15,7 +16,8 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"    
+    "deploy": "gh-pages -d build",
+    "validate": "./node_modules/.bin/validate-office-addin"
   },
   "devDependencies": {
     "gh-pages": "^1.1.0"
