@@ -1,39 +1,43 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import {
-  DocumentCard,
-  DocumentCardPreview,
-  DocumentCardTitle,
-  DocumentCardActivity
-} from 'office-ui-fabric-react/lib/DocumentCard';
+import { DefaultButton, IButtonProps } from 'office-ui-fabric-react/lib/Button';
+import { Link } from 'office-ui-fabric-react/lib/Link';
+import { MessageBar, MessageBarType } from 'office-ui-fabric-react/lib/MessageBar';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.onSetColor = this.onSetColor.bind(this);
+  }
+
+  onSetColor() {
+    window.Excel.run(async (context) => {
+      const range = context.workbook.getSelectedRange();
+      range.format.fill.color = 'green';
+      await context.sync();
+    });
+  }
+
   render() {
     return (
       <div>
-        <DocumentCard onClickHref='http://bing.com'>
-            <DocumentCardPreview
-              previewImages={ [
-                {
-                  previewImageSrc: require('./assets/images/documentpreview.png'),
-                  iconSrc: require('./assets/images/iconppt.png'),
-                  width: 318,
-                  height: 196,
-                  accentColor: '#ce4b1f'
-                }
-              ] }
-            />
-            <DocumentCardTitle title='Revenue stream proposal fiscal year 2016 version02.pptx'/>
-            <DocumentCardActivity
-              activity='Created Feb 23, 2016'
-              people={
-                [
-                  { name: 'Kat Larrson', profileImageSrc: require('./assets/images/avatarkat.png') }
-                ]
-              }
-              />
-          </DocumentCard>
+        <MessageBar
+          messageBarType={ MessageBarType.success }
+          isMultiline={ false }
+        >
+          Use it like you mean it.  Or some kinda message here using MessageBar Component. <Link href='https://github.com/cpsloal/prototype_office-ui-fabric-react'>See how this was made</Link>
+        </MessageBar>
+        <div className="Container">
+          <img src="https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product/svg/excel_48x1.svg" className="ExcelLogo" /><h1>Prototype Office UI Fabric with React</h1>
+          <p>Click the button below to set the color of the selected cell range to <span className="GreenText">Green.</span></p>
+          <DefaultButton
+              data-automation-id='test'
+              text="Make'em green"
+              onClick={this.onSetColor}
+              primary={true}
+          />
+        </div>
       </div>
     );
   }
