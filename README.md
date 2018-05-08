@@ -16,7 +16,7 @@
 </div>
 
 ## Overview
-A React App prototype using Office UI Fabric components.  Just to get familiar with Office UI Fabric components. 
+A React App prototype using Office UI Fabric components.  Just to get familiar with Office UI Fabric components for a friend. 
 
 The End Goal is to be able to create Office Add-ins.
 
