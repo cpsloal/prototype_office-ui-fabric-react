@@ -216,3 +216,8 @@ How about the tooltip with Add-in description?
 
 Tada!
 ![Office-Add-in-with-updated-manifest-03.png](doc/images/Office-Add-in-with-updated-manifest-03.png)
+
+<br>
+
+### Make it easier to live code the add-in during development
+Added a separate manifest file that loads this add-in from http://localhost:3000 so that when developing, the add-in can be live previewed and tested in Excel.  Ideally the build process would make sure the right server is used when in development vs. publishing.  [Code changes here](https://github.com/cpsloal/prototype_office-ui-fabric-react/commit/53a12a9ebab2379c2635c1de20bade78baaf7d53)
