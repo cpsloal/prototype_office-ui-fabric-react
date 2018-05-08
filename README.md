@@ -1,6 +1,6 @@
 <div align="center">
   <br>
-  <img width="256" src="https://static2.sharepointonline.com/files/fabric/fabric-website/images/home-addins.svg" alt="">
+  <img width="256" src="public/assets/logo-filled.png" alt="">
   <br>
   <br>
 </div>
@@ -187,7 +187,7 @@ Now [update Office Add-in manifest file](https://github.com/cpsloal/prototype_of
 
 Yes!!! now we are talking ...
 
-![Yey-Hello-World-Office-Add-in.png](/doc/images/Yey-Hello-World-Office-Add-in.png)
+![Yey-Hello-World-Office-Add-in.png](doc/images/Yey-Hello-World-Office-Add-in.png)
 
 Great 8( found a better doc! [Here it is](https://docs.microsoft.com/en-us/office/dev/add-ins/quickstarts/excel-quickstart-react) ... and its better than the fragmented documentation from folks at a big company.
 
@@ -197,4 +197,10 @@ Great 8( found a better doc! [Here it is](https://docs.microsoft.com/en-us/offic
 ### Make the Excel Add-in do something 'interesting'
 Using the instructions [here](https://docs.microsoft.com/en-us/office/dev/add-ins/quickstarts/excel-quickstart-react) got the Excel Add-in to work, and the [code changes are here](https://github.com/cpsloal/prototype_office-ui-fabric-react/commit/fbe93c35ea76fad88e21be5282c1c979070ac6b3) and the result:
 
-![make-it-green.png](/doc/images/make-it-green.png)
+![make-it-green.png](doc/images/make-it-green.png)
+
+
+### The icons for the Office Ribbon ...
+The icon was missing in the Office Ribbon to show the TaskPane.  Just need to [add the relevant icons](https://github.com/cpsloal/prototype_office-ui-fabric-react/commit/7d00cee60cf968ef949c0957cc1e2edeaefcba40) and voila:
+
+![Yey-Hello-World-Office-Add-in-with-icons-annotated.png](doc/images/Yey-Hello-World-Office-Add-in-with-icons-annotated.png)
