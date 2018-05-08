@@ -219,5 +219,5 @@ Tada!
 
 <br>
 
-### Make it easier to live code the add-in during development
+### Make it easier to live preview the add-in during development
 Added a separate manifest file that loads this add-in from http://localhost:3000 so that when developing, the add-in can be live previewed and tested in Excel.  Ideally the build process would make sure the right server is used when in development vs. publishing.  [Code changes](https://github.com/cpsloal/prototype_office-ui-fabric-react/commit/53a12a9ebab2379c2635c1de20bade78baaf7d53)
