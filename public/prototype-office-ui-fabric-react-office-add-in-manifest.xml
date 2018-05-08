@@ -13,24 +13,24 @@
 
   <!--Version. Updates from the store only get triggered if there is a version change. -->
   <Version>1.0.0.0</Version>
-  <ProviderName>[Provider name]</ProviderName>
+  <ProviderName>Ali Satter</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <!-- The display name of your add-in. Used on the store and various places of the Office UI such as the add-ins dialog. -->
-  <DisplayName DefaultValue="prototype_office-ui-fabric-react Office Add-in" />
-  <Description DefaultValue="[Workbook Add-in description]"/>
+  <DisplayName DefaultValue="Prototype Office UI Fabric w/ React - Office Add-in" />
+  <Description DefaultValue="A Prototype of an Excel Add-in using Office UI Fabric and React."/>
 
   <!-- Icon for your add-in. Used on installation screens and the add-ins dialog. -->
   <IconUrl DefaultValue="https://cpsloal.github.io/prototype_office-ui-fabric-react/assets/icon-32.png" />
-  <HighResolutionIconUrl DefaultValue="https://cpsloal.github.io/prototype_office-ui-fabric-react/assets/hi-res-icon.png"/>
+  <HighResolutionIconUrl DefaultValue="https://cpsloal.github.io/prototype_office-ui-fabric-react/assets/logo-filled.png"/>
 
   <!--If you plan to submit this add-in to the Office Store, uncomment the SupportUrl element below-->
   <!--<SupportUrl DefaultValue="[Insert the URL of a page that provides support information for the app]">-->
 
   <!-- Domains that will be allowed when navigating. For example, if you use ShowTaskpane and then have an href link, navigation will only be allowed if the domain is on this list. -->
   <AppDomains>
-    <AppDomain>AppDomain1</AppDomain>
-    <AppDomain>AppDomain2</AppDomain>
-    <AppDomain>AppDomain3</AppDomain>
+    <AppDomain>github.io</AppDomain>
+    <AppDomain>github.com</AppDomain>
+    <AppDomain>cpsloal.github.io</AppDomain>
   </AppDomains>
   <!--End Basic Settings. -->
 
@@ -130,14 +130,13 @@
       </bt:Urls>
       <!-- ShortStrings max characters==125. -->
       <bt:ShortStrings>
-        <bt:String id="Contoso.TaskpaneButton.Label" DefaultValue="Show Taskpane" />
+        <bt:String id="Contoso.TaskpaneButton.Label" DefaultValue="Make'em Green" />
         <bt:String id="Contoso.Group1Label" DefaultValue="Commands Group" />
-        <bt:String id="Contoso.GetStarted.Title" DefaultValue="Get started with your sample add-in!" />
+        <bt:String id="Contoso.GetStarted.Title" DefaultValue="Get started with Make'em Green add-in!" />
       </bt:ShortStrings>
       <!-- LongStrings max characters==250. -->
       <bt:LongStrings>
-        <bt:String id="Contoso.TaskpaneButton.Tooltip" DefaultValue="Click to Show a Taskpane" />
-        <bt:String id="Contoso.GetStarted.Description" DefaultValue="Your sample add-in loaded succesfully. Go to the HOME tab and click the 'Show Taskpane' button to get started." />
+        <bt:String id="Contoso.TaskpaneButton.Tooltip" DefaultValue="Make'em Green loaded succesfully. Go to the HOME tab and click the 'Make'em Green' button to get started." />
       </bt:LongStrings>
     </Resources>
   </VersionOverrides>
