@@ -200,7 +200,19 @@ Using the instructions [here](https://docs.microsoft.com/en-us/office/dev/add-in
 ![make-it-green.png](doc/images/make-it-green.png)
 
 
-### The icons for the Office Ribbon ...
+### The icons & branding for the Office Add-in ...
 The icon was missing in the Office Ribbon to show the TaskPane.  Just need to [add the relevant icons](https://github.com/cpsloal/prototype_office-ui-fabric-react/commit/7d00cee60cf968ef949c0957cc1e2edeaefcba40) and voila:
 
 ![Yey-Hello-World-Office-Add-in-with-icons-annotated.png](doc/images/Yey-Hello-World-Office-Add-in-with-icons-annotated.png)
+
+<br>
+
+Now change the button label and Add-in description is done in by [chaning the manifest file](https://github.com/cpsloal/prototype_office-ui-fabric-react/commit/e90fe94f2fa578b79491c7e5780eae71b8e47cad) and the results speak for themselves:
+
+![Office-Add-in-with-updated-manifest-01-ann.png](doc/images/Office-Add-in-with-updated-manifest-01-ann.png)
+
+How about the tooltip with Add-in description?
+![Office-Add-in-with-updated-manifest-02-ann.png](doc/images/Office-Add-in-with-updated-manifest-02-ann.png)
+
+Tada!
+![Office-Add-in-with-updated-manifest-03.png](doc/images/Office-Add-in-with-updated-manifest-03.png)
