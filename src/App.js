@@ -29,7 +29,7 @@ class App extends Component {
           Use it like you mean it.  Or some kinda message here using MessageBar Component. <Link href='https://github.com/cpsloal/prototype_office-ui-fabric-react'>See how this was made</Link>
         </MessageBar>
         <div className="Container">
-          <img src="https://static2.sharepointonline.com/files/fabric/assets/brand-icons/product/svg/excel_48x1.svg" className="ExcelLogo" /><h1>Prototype Office UI Fabric with React</h1>
+          <img src="assets/logo-filled.png" className="PrototypeLogo" /><h1>Prototype Office UI Fabric with React</h1>
           <p>Click the button below to set the color of the selected cell range to <span className="GreenText">Green.</span></p>
           <DefaultButton
               data-automation-id='test'
